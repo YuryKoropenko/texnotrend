@@ -1,0 +1,316 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small,
+strike, strong, sub, sup, tt, var, b, i,
+dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, nav, output, ruby, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button, button:active, button:focus,
+input, input:active, input:focus {
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.clearfix:before {
+  content: '';
+  display: table;
+}
+
+/*buttons*/
+.yellow-btn {
+  display: inline-block;
+  -webkit-box-shadow: 0px 5px 29px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 5px 29px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 5px 29px 0px rgba(0, 0, 0, 0.22);
+}
+
+.yellow-btn a {
+  padding: 12px 20px;
+  border-radius: 0 0 2px 2px;
+  display: inline-block;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-family: "OpenSansSemibold", sans-serif;
+  background: #f1cf07;
+  background: -moz-linear-gradient(top, #f1cf07 0%, #ffb600 100%);
+  background: -webkit-linear-gradient(top, #f1cf07 0%, #ffb600 100%);
+  background: linear-gradient(to bottom, #f1cf07 0%, #ffb600 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1cf07', endColorstr='#ffb600',GradientType=0 );
+  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px -2px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.yellow-btn a:hover, .yellow-btn a:focus {
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.25;
+  font-family: "OpenSansRegular", sans-serif;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.header::after {
+  content: '';
+  height: 301px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/top-grad.png);
+  background-repeat: x-repeat;
+  z-index: 1;
+}
+
+.header__top-line {
+  height: 70px;
+  background-color: rgba(1, 2, 18, 0.65);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.top-line__h-phone {
+  position: absolute;
+  width: 430px;
+  right: 0;
+  top: 70px;
+  padding-top: 20px;
+}
+
+.h-logo {
+  height: 70px;
+  position: relative;
+}
+
+.h-logo__link {
+  background-color: #153464;
+  display: block;
+  padding: 18px 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+}
+
+.h-logo__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.h-nav {
+  font-size: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+.h-nav__item {
+  display: inline-block;
+}
+
+.h-nav__item-active .h-nav__link {
+  border-bottom-color: #fecc00;
+  color: #fecc00;
+  text-decoration: none;
+}
+
+.h-nav__link {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  height: 70px;
+  line-height: 62px;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.h-nav__link:hover, .h-nav__link:focus {
+  border-bottom-color: #fecc00;
+  color: #fecc00;
+  text-decoration: none;
+}
+
+.h-phone {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h-phone__item {
+  display: inline-block;
+}
+
+.h-phone__item span {
+  color: #fff;
+  font-size: 24px;
+  line-height: 18px;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.h-phone__button {
+  text-align: right;
+  padding-top: 18px;
+}
+
+.h-slider {
+  overflow: hidden;
+}
+
+.h-slider__item {
+  overflow: hidden;
+  height: 795px;
+  text-align: center;
+  position: relative;
+}
+
+.h-slider__item img {
+  display: inline-block;
+  min-height: 795px;
+  min-width: 100%;
+}
+
+.h-slider__tags {
+  position: absolute;
+  left: 0;
+  bottom: 142px;
+  background-color: rgba(0, 16, 64, 0.82);
+  height: 105px;
+}
+
+.h-slider__tags-wp {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 55px;
+}
+
+.h-slider__tags-wp::after {
+  content: '';
+  height: 105px;
+  width: 51px;
+  background-image: url(../img/angle.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  right: -51px;
+  top: 0;
+}
+
+.h-slider__tags span {
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 105px;
+}
+
+.h-slider .slick-arrow {
+  height: 104px;
+  width: 58px;
+  text-indent: -9999px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.77);
+  position: absolute;
+  top: 50%;
+  margin-top: -52px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 10;
+}
+
+.h-slider .slick-prev {
+  background-image: url(../img/h-arrow-left.png);
+  left: 0;
+}
+
+.h-slider .slick-next {
+  background-image: url(../img/h-arrow-right.png);
+  right: 0;
+}
+
+.h-slider .slick-dots {
+  font-size: 0;
+  position: absolute;
+  bottom: 92px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.h-slider .slick-dots li {
+  display: inline-block;
+  border: 1px solid transparent;
+  margin: 0 5px;
+}
+
+.h-slider .slick-dots li:hover button {
+  background-color: #fefefe;
+}
+
+.h-slider .slick-dots li button {
+  text-indent: -9999px;
+  padding: 0;
+  margin: 0;
+  width: 32px;
+  height: 12px;
+  border: 1px solid transparent;
+  background-color: rgba(254, 254, 254, 0.55);
+}
+
+.h-slider .slick-dots .slick-active {
+  border-color: #fefefe !important;
+}
+
+.h-slider .slick-dots .slick-active button {
+  border-color: #40444c !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdc601+0,f9a00a+100 */
+  background: #fdc601;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fdc601 0%, #f9a00a 100%);
+  background: -webkit-linear-gradient(top, #fdc601 0%, #f9a00a 100%);
+  background: linear-gradient(to bottom, #fdc601 0%, #f9a00a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdc601', endColorstr='#f9a00a',GradientType=0 );
+}
