@@ -3,4 +3,10 @@ $(document).ready(function() {
 		draggable: false,
 		dots: true
 	});
+
+	$('.interesting-offers__slider').slick({
+		infinite: true,
+		slidesToShow: 5,
+		slidesToScroll: 1
+	});
 });
