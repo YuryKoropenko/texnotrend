@@ -221,6 +221,9 @@ body
 		padding-bottom: 100px
 	&__interesting-offers
 		background-color: #1a2025
+		overflow: hidden
+	&__c-reviews
+		background-color: #ebebeb
 
 .recommendations
 	-webkit-box-shadow: 0px 5px 70px 0px rgba(13,24,42,0.28)
@@ -430,15 +433,177 @@ body
 				color: #0099d1
 				text-decoration: none
 
-.interesting-offers
-	&__slider
+.i-slider
+	margin-left: -15px
+	margin-right: -15px
+	margin-bottom: 30px
+	width: auto
+	.slick-list
+		overflow: visible
 	&__item
+		margin: 0 15px
+		opacity: 0.24
+	.slick-active
+		opacity: 1
+	&__link
+		display: block
 	&__img
+		height: 225px
+		overflow: hidden
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
 		img
-			width: 100%
+			width: auto
 			min-height: 100%
 			display: block
 	&__description
+		padding: 18px 0
 	&__title
+		color: #fff
+		font-size: 18px
+		line-height: 24px
+		font-family: "OpenSansBold", sans-serif
+		display: block
+		text-align: center
 	&__sub-title
+		color: #939393
+		font-size: 18px
+		line-height: 24px
+		font-family: "OpenSansLight", sans-serif
+		display: block
+		text-align: center
 	&__price
+		color: #2595be
+		font-size: 14px
+		line-height: 24px
+		font-family: "OpenSansBold", sans-serif
+		display: block
+		text-align: center
+	&__button
+		text-align: center
+		padding-bottom: 70px
+
+.c-slider
+	margin-left: -15px
+	margin-right: -15px
+	width: auto
+	&__item
+		background-color: #fff
+		margin: 0 15px
+		padding: 0 20px 36px
+	&__top
+		height: 102px
+		padding-left: 90px
+		box-sizing: border-box
+		position: relative
+	&__icon
+		position: absolute
+		left: 0
+		top: 0
+		width: 90px
+		height: 102px
+		overflow: hidden
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+		img
+			display: block
+			max-width: 100%
+			max-height: 100%
+	&__name
+		position: relative
+		height: 102px
+		b
+			color: #000
+			font-size: 18px
+			line-height: 22px
+			font-family: "OpenSansBold", sans-serif
+			position: absolute
+			display: block
+			top: 50%
+			transform: translateY(-50%)
+			-webkit-transform: translateY(-50%)
+	&__bottom
+	&__description
+		p
+			color: #797979
+			font-size: 14px
+			line-height: 22px
+	.slick-dots
+		font-size: 0
+		text-align: center
+		display: block
+		width: 100%
+		padding-top: 40px
+		padding-bottom: 80px
+		.slick-active
+			button
+				position: relative
+				&::after
+					content: ''
+					width: 18px
+					height: 18px
+					border-radius: 50%
+					-webkit-border-radius: 50%
+					background-color: #ffd800
+					position: absolute
+					left: 2px
+					top: 2px
+		li
+			display: inline-block
+			padding: 0 8px
+			button
+				text-indent: -9999px
+				padding: 0
+				margin: 0
+				width: 24px
+				height: 24px
+				border-radius: 50%
+				-webkit-border-radius: 50%
+				border: 1px solid #d4d4d4
+				background-color: #fff
+
+.semi-trailers
+	&__img
+		display: block
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+		min-height: 228px
+		img
+			max-width: 100%
+			max-height: 100%
+			display: block
+
+.overview
+	margin-bottom: 150px
+	&__video
+		iframe
+			width: 100%
+			height: 510px

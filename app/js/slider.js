@@ -1,12 +1,25 @@
 $(document).ready(function() {
 	$('.h-slider').slick({
 		draggable: false,
+		infinite: true,
 		dots: true
 	});
 
-	$('.interesting-offers__slider').slick({
+	$('.i-slider').slick({
+		draggable: false,
 		infinite: true,
-		slidesToShow: 5,
+		arrows: false,
+		slidesToShow: 3,
+		slidesToScroll: 1
+	});
+
+	$('.c-slider').slick({
+		draggable: false,
+		infinite: true,
+		dots: true,
+		adaptiveHeight: true,
+		arrows: false,
+		slidesToShow: 3,
 		slidesToScroll: 1
 	});
 });
