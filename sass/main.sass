@@ -607,3 +607,173 @@ body
 		iframe
 			width: 100%
 			height: 510px
+
+.footer
+	&__consultation
+		height: 238px
+		background-image: url(../img/footer-top.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			height: 100%
+			width: 100%
+			background-color: rgba(#1b86b0,.9)
+	&__nav
+		background-color: #153464
+	&__info
+		background-color: #1a2025
+		padding: 50px 0
+
+.consultation
+	margin-left: -30px
+	&__girl
+		position: relative
+		height: 238px
+		z-index: 1
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		&::before
+			content: ''
+			width: 245px
+			height: 323px
+			background-image: url(../img/footer-girl.png)
+			background-repeat: no-repeat
+			background-position: center center
+			display: block
+			position: absolute
+			bottom: 0
+			left: 50px
+			z-index: 1
+	&__title
+		b
+			color: #fff
+			font-size: 20px
+			line-height: 30px
+			font-family: "OpenSansLight", sans-serif
+	&__phones
+	&__item
+		font-size: 36px
+		color: #fff
+		line-height: 56px
+		font-family: "OpenSansSemibold", sans-serif
+		position: relative
+		padding-left: 50px
+		&::before
+			content: ''
+			width: 33px
+			height: 33px
+			display: block
+			background-image: url(../img/icon/phone.png)
+			background-repeat: no-repeat
+			background-position: center center
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			position: absolute
+
+.f-nav
+	font-size: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-around
+	height: 70px
+	&__item
+		display: inline-block
+		&-active
+			.f-nav__link
+				border-bottom-color: #1b8db7
+				color: #1b8db7
+				text-decoration: none
+	&__link
+		color: #fff
+		font-size: 14px
+		text-transform: uppercase
+		display: block
+		height: 70px
+		line-height: 62px
+		border-bottom: 4px solid transparent
+		border-top: 4px solid transparent
+		font-family: "OpenSansBold", sans-serif
+		&:hover, &:focus
+			border-bottom-color: #1b8db7
+			color: #1b8db7
+			text-decoration: none
+
+.f-info
+	&__first
+		b
+			color: #fff
+			font-size: 14px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+			display: block
+		span
+			display: block
+			color: #85afbe
+			font-size: 14px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+	&__second
+		b
+			color: #fff
+			font-size: 14px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+			display: inline-block
+		span
+			display: inline-block
+			color: #85afbe
+			font-size: 14px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+		a
+			display: inline-block
+			color: #0099d1
+			font-size: 14px
+			line-height: 14px
+			font-family: "OpenSansLight", sans-serif
+			border-bottom: 1px dotted #0099d1
+			&:hover
+				color: #0099d1
+				text-decoration: none
+				border-color: transparent
+	&__third
+		b
+			color: #fff
+			font-size: 14px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+			display: inline-block
+		span
+			display: inline-block
+			color: #85afbe
+			font-size: 14px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+		a
+			display: inline-block
+			color: #0099d1
+			font-size: 14px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+			text-decoration: underline
+			&:hover
+				color: #0099d1
+				text-decoration: none
