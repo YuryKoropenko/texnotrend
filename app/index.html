@@ -90,7 +90,7 @@
 							</ul>
 							<div class="h-phone__button">
 								<div class="yellow-btn">
-									<a href="#">
+									<a href="#" class="fb-button">
 										Перезвоните мне!
 									</a>
 								</div>
@@ -606,7 +606,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6 col-sm-push-6 col-xs-12">
+					<div class="col-md-6 col-md-push-0 col-sm-6 col-sm-push-6 col-xs-12">
 						<div class="supply">
 							<div class="supply__text">
 								<p>
@@ -615,7 +615,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6 col-sm-pull-6 hidden-xs">
+					<div class="col-md-6 col-md-pull-0 col-sm-6 col-sm-pull-6 hidden-xs">
 						<div class="supply">
 							<div class="supply__img">
 								<img src="img/map.png" alt="map">
@@ -678,6 +678,9 @@
 						<div class="i-slider">
 							<div class="i-slider__item">
 								<a href="#" class="i-slider__link">
+									<div class="i-slider__cou">
+										<img src="img/rec/new.png" alt="">
+									</div>
 									<div class="i-slider__img">
 										<img src="img/i-slider/1.jpg" alt="slider">
 									</div>
@@ -696,6 +699,9 @@
 							</div>
 							<div class="i-slider__item">
 								<a href="#" class="i-slider__link">
+									<div class="i-slider__cou">
+										<img src="img/rec/sale.png" alt="">
+									</div>
 									<div class="i-slider__img">
 										<img src="img/i-slider/2.jpg" alt="slider">
 									</div>
@@ -714,6 +720,9 @@
 							</div>
 							<div class="i-slider__item">
 								<a href="#" class="i-slider__link">
+									<div class="i-slider__cou">
+										<img src="img/rec/sale.png" alt="">
+									</div>
 									<div class="i-slider__img">
 										<img src="img/i-slider/3.jpg" alt="slider">
 									</div>
@@ -979,7 +988,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="consultation__girl">
-							<div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-4">
+							<div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
 								<div class="consultation">
 									<div class="consultation__title">
 										<b>
@@ -989,7 +998,7 @@
 									<ul class="consultation__phones">
 										<li class="consultation__item">
 											+7 (495) 150-08-59
-										</li>
+										</li><br>
 										<li class="consultation__item">
 											+7 (800) 775-04-10
 										</li>
@@ -1085,13 +1094,13 @@
 									+7 (495) 150-08-59
 								</b>
 								<span> - </span>
-								<a href="#">
+								<a href="#" class="fb-button">
 									заказать звонок
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-sm-offset-6 col-xs-12">
+					<div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-6 col-xs-12">
 						<div class="f-info">
 							<div class="f-info__third">
 								<b>
@@ -1113,6 +1122,43 @@
 			</div>
 		</div>
 	</footer>
+	<div class="up-button">
+		<button></button>
+	</div>
+	<div class="popup__bg"></div>
+	<div class="cb-popup">
+		<div class="cb-popup__wrapper">
+			<div class="cb-popup__close">
+				<button></button>
+			</div>
+			<div class="cb-popup__title">
+				<b>
+					Форма заявки
+				</b>
+			</div>
+			<div class="cb-popup__description">
+				<p>
+					Отправьте заявку и мы свяжемся с вами<br>в ближайшее время.
+				</p>
+			</div>
+			<form action="">
+				<div class="cb-popup__row cb-popup__name">
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="cb-popup__row cb-popup__phone">
+					<input type="text" placeholder="Телефон">
+				</div>
+				<div class="cb-popup__row">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+				</div>
+				<div class="yellow-btn">
+					<a href="#">
+						Отправить
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>

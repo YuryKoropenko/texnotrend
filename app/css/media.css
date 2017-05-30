@@ -24,6 +24,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
+  .up-button {
+    right: 40px;
+    bottom: 0;
+  }
+  .page__tands {
+    margin-bottom: 0;
+  }
   .block-title {
     padding: 40px 0 30px;
   }
@@ -321,11 +328,50 @@
   .h-logo__link img {
     display: inline-block;
   }
+  .footer__top-line {
+    background-color: #111331;
+    height: 70px;
+  }
+  .header__top-slider::after {
+    content: '';
+    height: 186px;
+    width: 100%;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: url(../img/mob-grad.png);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+  .cb-popup {
+    width: 80%;
+  }
   /**/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .cb-popup {
+    width: 90%;
+  }
+  .cb-popup__title b {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  .cb-popup__description p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .cb-popup__wrapper::after {
+    display: none;
+  }
+  /**/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 420px) {
   /**/
 }
 
