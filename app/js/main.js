@@ -1,8 +1,23 @@
 $(document).ready(function() {
+/*vars*/
+	var hh = $('.header').height(); // высота header
+
 	/*меню шапка*/
 	$('.h-nav__mob button').on('click', function() {
 		$('.header__mob-nav').slideToggle();
 	});
+
+	/*header scrol*/
+	if ($(window).width() > 991) {
+		$(window).scroll(function() {
+			if ( $(window).scrollTop() >= hh ) {
+				$('.header__scrol').show();
+			} else {
+				$('.header__scrol').hide();
+			}
+		});
+	}
+
 
 	/*up button*/
 	$('.up-button button').on('click', function() {
@@ -10,8 +25,7 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function() {
-		var bo = $('.header').height();
-		if ( $(window).scrollTop() >= bo ){
+		if ( $(window).scrollTop() >= hh ){
 			$('.up-button').fadeIn();
 		} else {
 			$('.up-button').fadeOut();

@@ -99,6 +99,7 @@ ol, ul {
   right: 120px;
   bottom: 0;
   display: none;
+  z-index: 90;
 }
 
 .up-button button {
@@ -126,6 +127,19 @@ ol, ul {
   font-family: "OpenSansLight", sans-serif;
 }
 
+.p-top-line__title {
+  display: block;
+  text-align: left;
+}
+
+.p-top-line__title h2 {
+  display: inline-block;
+  color: #000;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "OpenSansSemibold", sans-serif;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -140,7 +154,36 @@ body {
   display: none;
 }
 
-.header::after {
+.header__top-line {
+  height: 70px;
+  background-color: rgba(1, 2, 18, 0.65);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header__scrol {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(1, 2, 18, 0.88);
+  height: 70px;
+  z-index: 10;
+  display: none;
+}
+
+.header__h-bg {
+  height: 304px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.header__h-bg::after {
   content: '';
   height: 301px;
   width: 100%;
@@ -151,16 +194,6 @@ body {
   background-image: url(../img/top-grad.png);
   background-repeat: x-repeat;
   z-index: 1;
-}
-
-.header__top-line {
-  height: 70px;
-  background-color: rgba(1, 2, 18, 0.65);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
 }
 
 .top-line__h-phone {
@@ -187,6 +220,32 @@ body {
 }
 
 .h-logo__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.s-logo {
+  height: 70px;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.s-logo__link {
+  display: inline-block;
+}
+
+.s-logo__img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -264,6 +323,19 @@ body {
   height: 795px;
   text-align: center;
   position: relative;
+}
+
+.h-slider__item::after {
+  content: '';
+  height: 301px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/top-grad.png);
+  background-repeat: x-repeat;
+  z-index: 1;
 }
 
 .h-slider__item img {
@@ -415,6 +487,17 @@ body {
 
 .page__c-reviews {
   background-color: #ebebeb;
+}
+
+.page__p-top-line {
+  padding: 14px 0;
+  background-color: #fff;
+}
+
+.page__about-description {
+  background-color: #ededed;
+  padding-top: 30px;
+  padding-bottom: 150px;
 }
 
 .recommendations {
@@ -618,6 +701,7 @@ body {
 
 .supply__img img {
   display: block;
+  max-width: 100%;
 }
 
 .supply__description b {
@@ -976,10 +1060,11 @@ body {
 .consultation__item {
   font-size: 36px;
   color: #fff;
-  line-height: 56px;
+  line-height: 52px;
   font-family: "OpenSansSemibold", sans-serif;
   position: relative;
   padding-left: 50px;
+  display: inline-block;
 }
 
 .consultation__item::before {
@@ -1252,4 +1337,151 @@ body {
   top: 50%;
   margin-top: -11.5px;
   left: 15px;
+}
+
+.p-top-line__right {
+  text-align: right;
+}
+
+.p-top-line__index {
+  padding-left: 18px;
+  display: inline-block;
+  background-image: url(../img/icon/home.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin: 10px 0;
+}
+
+.p-top-line__index a {
+  color: #777;
+  text-decoration: underline;
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 14px;
+  display: block;
+}
+
+.p-top-line__index a:hover {
+  text-decoration: none;
+  color: #777;
+}
+
+.about-description p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #636363;
+  display: inline-block;
+}
+
+.about-description ul {
+  display: block;
+}
+
+.about-description ul li {
+  color: #636363;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 30px;
+  display: block;
+  position: relative;
+}
+
+.about-description ul li::before {
+  content: '';
+  background-color: #0098d0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+
+.about-description b {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000;
+  font-family: "OpenSansSemibold", sans-serif;
+  display: block;
+}
+
+.about-description strong {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.about-description a {
+  color: #0098d0;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  font-family: "OpenSansLight", sans-serif;
+  display: inline-block;
+}
+
+.about-description a:hover {
+  text-decoration: none;
+  color: #0098d0;
+}
+
+.about-description .img-wp {
+  padding: 70px 0;
+  display: block;
+  text-align: center;
+}
+
+.about-description .img-wp img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.about-description .video-wp {
+  padding: 50px 0;
+}
+
+.about-description .video-wp iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+}
+
+.about-description .white-block {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.about-description .white-block ul li {
+  padding-left: 22px;
+}
+
+.about-description .white-block ul li::before {
+  left: 0;
+}
+
+.about-description .white-block__row {
+  padding-left: 116px;
+  position: relative;
+}
+
+.about-description .white-block__img {
+  width: 116px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.page-bottom-pad {
+  padding-bottom: 150px;
 }

@@ -155,6 +155,11 @@
 		padding: 30px 0
 	.f-info__second
 		padding-bottom: 20px
+	.p-top-line__right
+		text-align: left
+	.about-description .video-wp
+		iframe
+			height: 315px
 	/**/
 
 
@@ -256,21 +261,35 @@
 	.footer__top-line
 		background-color: #111331
 		height: 70px
-	.header__top-slider
-		&::after
-			content: ''
-			height: 186px
-			width: 100%
-			position: absolute
-			top: 210px
-			left: 0
-			right: 0
-			display: block
-			background-image: url(../img/mob-grad.png)
-			background-repeat: repeat-x
-			background-position: 0 0
 	.cb-popup
 		width: 80%
+	.about-description .white-block__row
+		padding-left: 0
+	.about-description .white-block__img
+		width: 100%
+		position: static
+		min-height: 120px
+		display: block
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+	.about-description .video-wp iframe
+		height: 220px
+	.about-description .white-block
+		padding: 15px
+	.up-button
+		left: 15px
+		right: auto
+	.page-bottom-pad
+		padding-bottom: 0
 	/**/
 
 
@@ -317,6 +336,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
+	.header__mob-nav
+		display: none
 	/**/
 
 
