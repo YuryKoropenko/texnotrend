@@ -278,6 +278,14 @@ body
 		background-color: #ededed
 		padding-top: 30px
 		padding-bottom: 150px
+	&__p-goods
+		padding-top: 600px
+		background-image: url(../img/1.jpg)
+		background-position: top center
+		background-color: #ededed
+		margin-top: -600px
+		background-repeat: no-repeat
+		padding-bottom: 150px
 
 .recommendations
 	-webkit-box-shadow: 0px 5px 70px 0px rgba(13,24,42,0.28)
@@ -952,22 +960,31 @@ body
 	&__left
 	&__right
 		text-align: right
-	&__index
-		padding-left: 18px
+
+.navi
+	font-size: 0
+	&__item
 		display: inline-block
-		background-image: url(../img/icon/home.png)
+		padding-left: 20px
+		background-image: url(../img/icon/ar.png)
 		background-repeat: no-repeat
-		background-position: left center
-		margin: 10px 0
-		a
+		background-position: 6px 6px
+		&-index
+			padding-left: 18px
+			display: inline-block
+			background-image: url(../img/icon/home.png)
+			background-repeat: no-repeat
+			background-position: left center
+			margin: 10px 0
+	&__link
+		color: #777
+		text-decoration: underline
+		font-family: "OpenSansLight", sans-serif
+		font-size: 14px
+		display: block
+		&:hover
+			text-decoration: none
 			color: #777
-			text-decoration: underline
-			font-family: "OpenSansLight", sans-serif
-			font-size: 14px
-			display: block
-			&:hover
-				text-decoration: none
-				color: #777
 
 .about-description
 	p
@@ -1057,3 +1074,157 @@ body
 
 .page-bottom-pad
 	padding-bottom: 150px
+
+.p-top-cat
+	padding-left: 322px
+	position: relative
+	margin-bottom: 56px
+	&__img
+		width: 322px
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		img
+			max-width: 95%
+	&__text
+	&__title
+		h2
+			color: #000
+			font-size: 24px
+			line-height: auto
+	&__description
+		padding-top: 20px
+		p
+			color: #787878
+			font-size: 16px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+
+.goods
+	&__item
+		height: 282px
+		width: 100%
+		display: block
+		background-color: #fff
+		-webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+		-moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+		box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+		padding: 30px
+		position: relative
+		margin-bottom: 28px
+		@extend .clearfix
+		&-img
+			position: relative
+			width: 330px
+			display: block
+			float: left
+			height: 100%
+			.i-slider__cou
+				top: -22px
+				right: -18px
+				img
+					min-width: auto
+					min-height: auto
+			img
+				min-width: 100%
+				height: 100%
+		&-description
+			padding-left: 30px
+			float: left
+		&-title
+			padding-bottom: 10px
+			h2
+				font-size: 24px
+				color: #000
+				line-height: auto
+				font-family: "OpenSansSemibold", sans-serif
+		&-table
+			tr
+			&-left
+				font-size: 14px
+				color: #939393
+				font-family: "OpenSansLight", sans-serif
+				padding-right: 35px
+				padding: 5px 35px 5px 0
+			&-right
+				font-size: 14px
+				color: #000
+				font-family: "OpenSansLight", sans-serif
+				padding: 5px 0
+		&-info
+			float: right
+			&-price
+				height: 65px
+				background-color: #1b88b2
+				position: relative
+				padding-left: 25px
+				margin-right: -36px
+				width: 260px
+				box-sizing: border-box
+				&::before
+					content: ''
+					background-image: url(../img/goods-an.png)
+					background-repeat: no-repeat
+					background-position: center center
+					width: 35px
+					height: 65px
+					position: absolute
+					left: -35px
+					top: 0
+				span
+					line-height: 65px
+					color: #fff
+					font-size: 24px
+					font-family: "OpenSansBold", sans-serif
+			.yellow-btn
+				position: absolute
+				bottom: 30px
+				right: 30px
+	&-description
+		p
+			color: #3d3d3d
+			font-size: 16px
+			line-height: 24px
+			font-family: "OpenSansLight", sans-serif
+		strong
+			color: #3d3d3d
+			font-family: "OpenSansBold", sans-serif
+			font-size: 16px
+			line-height: 24px
+		h2
+			color: #3d3d3d
+			font-size: 24px
+			line-height: 24px
+			font-family: "OpenSansSemibold", sans-serif
+			display: block
+		img
+			float: right
+		ul
+			li
+				font-size: 16px
+				line-height: 24px
+				color: #3d3d3d
+				font-family: "OpenSansLight", sans-serif
+				display: block
+				padding-left: 20px
+				position: relative
+				&::before
+					content: ''
+					width: 9px
+					height: 9px
+					background-color: #1571a1
+					border-radius: 50%
+					-webkit-border-radius: 50%
+					display: block
+					position: absolute
+					left: 0
+					top: 8px
