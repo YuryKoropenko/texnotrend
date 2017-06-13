@@ -221,6 +221,12 @@
   .goods__item-description {
     padding-left: 0;
   }
+  .about-description {
+    background-image: none !important;
+  }
+  .about-description .img-wp {
+    padding: 0;
+  }
   /**/
 }
 
@@ -427,6 +433,20 @@
   }
   .p-top-cat {
     margin-bottom: 30px;
+  }
+  .img-block {
+    padding-left: 0 !important;
+  }
+  .img-left {
+    width: 100% !important;
+    position: static !important;
+    margin-bottom: 25px;
+  }
+  .leasing-item {
+    padding-top: 0;
+  }
+  .page__about-description {
+    padding-bottom: 30px;
   }
   /**/
 }
