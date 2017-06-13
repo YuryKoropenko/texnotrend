@@ -448,6 +448,15 @@
   .page__about-description {
     padding-bottom: 30px;
   }
+  .contacts {
+    padding: 15px;
+  }
+  .contacts__item i {
+    width: 40px;
+  }
+  .contacts__map iframe {
+    height: 300px;
+  }
   /**/
 }
 

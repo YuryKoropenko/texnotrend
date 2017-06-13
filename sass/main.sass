@@ -1070,6 +1070,9 @@ body
 	.white-block
 		background-color: #fff
 		padding: 30px
+		-webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+		-moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+		box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
 		ul
 			li
 				padding-left: 22px
@@ -1275,4 +1278,47 @@ body
 			display: block
 
 .about-description
-	background-image: none !important
+	.contacts:first-child
+		margin-top: 0
+
+.contacts
+	background-color: #fff
+	-webkit-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+	-moz-box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+	box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.14)
+	padding: 30px
+	margin-top: 30px
+	b
+		font-size: 16px
+		color: #000
+		font-family: "OpenSansSemibold", sans-serif
+		line-height: 30px
+		display: inline-block
+	h2
+		font-size: 24px
+		color: #000
+		line-height: 30px
+		font-family: "OpenSansSemibold", sans-serif
+	p
+		line-height: 30px
+		font-size: 16px
+		color: #7a7a7a
+		font-family: "OpenSansLight", sans-serif
+	&__item
+		padding: 10px 0 10px 50px
+		position: relative
+		i
+			position: absolute
+			width: 50px
+			left: 0
+			top: 0
+			bottom: 0
+			background-repeat: no-repeat
+			background-position: center center
+			max-width: 90%
+	&__map
+		padding-top: 8px
+		iframe
+			height: 405px
+			display: block
+			width: 100%
