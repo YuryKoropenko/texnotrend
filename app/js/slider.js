@@ -61,4 +61,27 @@ $(document).ready(function() {
     }
   ]
 	});
+
+	$('.c-slider-max').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.c-slider-min'
+	});
+	$('.c-slider-min').slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		arrows: true,
+		focusOnSelect: true,
+		asNavFor: '.c-slider-max',
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3
+			}
+		}
+	]
+	});
 });

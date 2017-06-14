@@ -23,6 +23,14 @@
   .goods__item-img-wp {
     width: 300px;
   }
+  .white-block-card {
+    min-height: 680px;
+  }
+  .c-slider-min .slick-current::after {
+    width: 80px;
+    height: 54px;
+    left: 2px;
+  }
   /**/
 }
 
@@ -226,6 +234,47 @@
   }
   .about-description .img-wp {
     padding: 0;
+  }
+  .about-description .white-block h2 {
+    padding-right: 0 !important;
+  }
+  .about-description .d-document-1 {
+    text-align: right;
+    margin-top: 30px;
+  }
+  .about-description .d-document {
+    text-align: left;
+    margin-top: 30px;
+  }
+  .center-img {
+    text-align: center;
+  }
+  .about-description img {
+    margin: 20px 0 0 0 !important;
+    padding: 0;
+  }
+  .c-slider-min__wrapper .c-slider-min__item img {
+    margin: 0 !important;
+  }
+  .c-slider-min .slick-current::after {
+    width: 94px;
+    height: 63px;
+  }
+  .white-block-card .goods__item-description {
+    width: 100%;
+    padding-top: 16px;
+  }
+  .about-description .white-block .goods__item-info {
+    padding-top: 0;
+  }
+  .c-nag {
+    margin-top: 30px;
+  }
+  body .about-description .c-slider-max img {
+    margin-top: 0 !important;
+  }
+  body .about-description img {
+    margin-top: 0 !important;
   }
   /**/
 }
@@ -456,6 +505,48 @@
   }
   .contacts__map iframe {
     height: 300px;
+  }
+  .about-description .white-block .title-block-icon {
+    padding-left: 0 !important;
+  }
+  .about-description .white-block .title-block-icon i {
+    display: none;
+  }
+  .about-description .d-document {
+    text-align: center;
+  }
+  .about-description .d-document img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  .about-description .d-document-1 {
+    text-align: center;
+  }
+  .about-description .d-document-1 img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  .about-description .flex-cont {
+    display: block;
+  }
+  .p-top-line__title h2 {
+    font-size: 30px;
+  }
+  .c-questions {
+    float: right;
+  }
+  .c-slider-min .slick-current::after {
+    display: none;
+  }
+  .tabs__block li {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .tabs__block {
+    margin-left: 0;
   }
   /**/
 }
