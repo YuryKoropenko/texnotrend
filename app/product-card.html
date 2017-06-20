@@ -15,6 +15,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/fancybox/dist/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -272,25 +273,25 @@
 												</div>
 												<div class="c-slider-max">
 													<div class="c-slider-max__item">
-														<img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123">
+														<a id="single_image" href="img/items/c-slide-b.jpg"><img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123"></a>
 													</div>
 													<div class="c-slider-max__item">
-														<img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123">
+														<a id="single_image" href="img/items/c-slide-b.jpg"><img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123"></a>
 													</div>
 													<div class="c-slider-max__item">
-														<img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123">
+														<a id="single_image" href="img/items/c-slide-b.jpg"><img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123"></a>
 													</div>
 													<div class="c-slider-max__item">
-														<img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123">
+														<a id="single_image" href="img/items/c-slide-b.jpg"><img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123"></a>
 													</div>
 													<div class="c-slider-max__item">
-														<img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123">
+														<a id="single_image" href="img/items/c-slide-b.jpg"><img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123"></a>
 													</div>
 													<div class="c-slider-max__item">
-														<img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123">
+														<a id="single_image" href="img/items/c-slide-b.jpg"><img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123"></a>
 													</div>
 													<div class="c-slider-max__item">
-														<img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123">
+														<a id="single_image" href="img/items/c-slide-b.jpg"><img src="img/items/c-slide-b.jpg" height="487" width="718" alt="123"></a>
 													</div>
 												</div>
 											</div>
@@ -685,9 +686,11 @@
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script type="text/javascript" src="libs/lightTabs/lightTabs.js"></script>
+	<script type="text/javascript" src="libs/fancybox/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			$('a#single_image').fancybox();
 			$('.tabs').lightTabs();
 		});
 	</script>
